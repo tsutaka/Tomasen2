@@ -32,6 +32,7 @@ void Tomasen::runGame(HWND _hWnd){
 		
 		//フレームループ
 		while(gameRestart != 1){
+			//test
 			Tomasen::inputGame();			//入力処理
 			Tomasen::communicationGame();	//伝達処理
 			Tomasen::updateGame();			//更新処理

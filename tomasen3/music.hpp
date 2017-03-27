@@ -169,9 +169,7 @@ void Music::setVolume(int ID, int vol){
 /*現在地チェック*/
 int Music::getPos(int ID){
 	std::ostringstream IDstr;
-	std::ostringstream tostr;
 	IDstr << ID;
-	tostr << tostr;
 
 	char returnStr[256];
 	

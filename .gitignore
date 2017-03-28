@@ -1,0 +1,11 @@
+..vs/
+.Debug/
+.ipch/
+.Release/
+.tomasen3/music/
+.tomasen3/Debug/
+.tomasen3/Release/
+.tomasen3/tomasen2/
+*.suo
+*.sdf
+*.opendb

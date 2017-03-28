@@ -1,0 +1,39 @@
+﻿2016/09/06 23:35:58 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "E:\user\Projects\tomasen2\Dropbox\01_シューティング\40_製造\10_原本\tomasen3\tomasen3\tomasen3.vcxproj" (build ターゲット)。
+     1>InitializeBuildStatus:
+         "AlwaysCreate" が指定されたため "Release\tomasen3.unsuccessfulbuild" を作成しています。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt event.cpp obj_wing_friend.cpp
+         event.cpp
+         obj_wing_friend.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\user\Projects\tomasen2\Dropbox\01_シューティング\40_製造\10_原本\tomasen3\Release\tomasen3.exe" /INCREMENTAL:NO /NOLOGO msimg32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\tomasen3.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\user\Projects\tomasen2\Dropbox\01_シューティング\40_製造\10_原本\tomasen3\Release\tomasen3.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\user\Projects\tomasen2\Dropbox\01_シューティング\40_製造\10_原本\tomasen3\Release\tomasen3.lib" /MACHINE:X86 Release\common.obj
+         Release\event.obj
+         Release\image.obj
+         Release\localcommon.obj
+         Release\main.obj
+         Release\object.obj
+         Release\obj_bullet.obj
+         Release\obj_effect.obj
+         Release\obj_item.obj
+         Release\obj_parts.obj
+         Release\obj_parts_A.obj
+         Release\obj_parts_B.obj
+         Release\obj_print.obj
+         Release\obj_wing.obj
+         Release\obj_wing_enemy.obj
+         Release\obj_wing_friend.obj
+         Release\tomasen.obj
+         コード生成しています。
+         コード生成が終了しました。
+         tomasen3.vcxproj -> E:\user\Projects\tomasen2\Dropbox\01_シューティング\40_製造\10_原本\tomasen3\Release\tomasen3.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"E:\user\Projects\tomasen2\Dropbox\01_シューティング\40_製造\10_原本\tomasen3\Release\tomasen3.exe;#1" /manifest Release\tomasen3.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         ファイル "Release\tomasen3.unsuccessfulbuild" を削除しています。
+         "Release\tomasen3.lastbuildstate" のタッチ タスクを実行しています。
+     1>プロジェクト "E:\user\Projects\tomasen2\Dropbox\01_シューティング\40_製造\10_原本\tomasen3\tomasen3\tomasen3.vcxproj" (build ターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+
+経過時間 00:00:04.00

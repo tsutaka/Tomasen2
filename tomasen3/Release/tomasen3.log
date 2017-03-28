@@ -1,0 +1,24 @@
+﻿  common.cpp
+  event.cpp
+  image.cpp
+  localcommon.cpp
+  main.cpp
+main.cpp(56): warning C4302: '型キャスト': 'LPSTR' から 'WORD' へ切り詰めます。
+main.cpp(65): warning C4302: '型キャスト': 'LPSTR' から 'WORD' へ切り詰めます。
+  object.cpp
+  obj_bullet.cpp
+  obj_effect.cpp
+  obj_item.cpp
+  obj_parts.cpp
+  obj_parts_A.cpp
+  obj_parts_B.cpp
+  obj_print.cpp
+  obj_wing.cpp
+  obj_wing_enemy.cpp
+  obj_wing_friend.cpp
+  tomasen.cpp
+  コード生成しています。
+  All 2743 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  コード生成が終了しました。
+  tomasen3.vcxproj -> C:\Users\tsutaka\Dropbox\01_シューティング\40_製造\10_原本\tomasen3\Release\tomasen3.exe
+  tomasen3.vcxproj -> C:\Users\tsutaka\Dropbox\01_シューティング\40_製造\10_原本\tomasen3\Release\tomasen3.pdb (Full PDB)

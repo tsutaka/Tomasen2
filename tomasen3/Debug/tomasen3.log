@@ -1,0 +1,56 @@
+﻿2016/11/04 17:00:01 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\Users\tsu-me\Dropbox\01_シューティング\40_製造\10_原本\tomasen3\tomasen3\tomasen3.vcxproj" (build ターゲット)。
+     1>InitializeBuildStatus:
+         "AlwaysCreate" が指定されたため "Debug\tomasen3.unsuccessfulbuild" を作成しています。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt event.cpp main.cpp obj_bullet.cpp obj_effect.cpp obj_parts.cpp obj_parts_A.cpp obj_parts_B.cpp obj_print.cpp obj_wing.cpp obj_wing_enemy.cpp obj_wing_friend.cpp tomasen.cpp
+         tomasen.cpp
+         コードを生成中...
+         コンパイル中...
+         obj_wing_friend.cpp
+         obj_wing_enemy.cpp
+         obj_wing.cpp
+         obj_print.cpp
+         obj_parts_B.cpp
+         obj_parts_A.cpp
+         obj_parts.cpp
+         obj_effect.cpp
+         obj_bullet.cpp
+         main.cpp
+         event.cpp
+         コードを生成中...
+       ManifestResourceCompile:
+         すべての出力が最新のものです。
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\tsu-me\Dropbox\01_シューティング\40_製造\10_原本\tomasen3\Debug\tomasen3.exe" /INCREMENTAL /NOLOGO msimg32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\tomasen3.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\tsu-me\Dropbox\01_シューティング\40_製造\10_原本\tomasen3\Debug\tomasen3.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\tsu-me\Dropbox\01_シューティング\40_製造\10_原本\tomasen3\Debug\tomasen3.lib" /MACHINE:X86 Debug\tomasen3.exe.embed.manifest.res
+         Debug\common.obj
+         Debug\event.obj
+         Debug\image.obj
+         Debug\localcommon.obj
+         Debug\main.obj
+         Debug\object.obj
+         Debug\obj_bullet.obj
+         Debug\obj_effect.obj
+         Debug\obj_item.obj
+         Debug\obj_parts.obj
+         Debug\obj_parts_A.obj
+         Debug\obj_parts_B.obj
+         Debug\obj_print.obj
+         Debug\obj_wing.obj
+         Debug\obj_wing_enemy.obj
+         Debug\obj_wing_friend.obj
+         Debug\tomasen.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\tomasen3.exe.embed.manifest" /manifest Debug\tomasen3.exe.intermediate.manifest
+         すべての出力が最新のものです。
+       LinkEmbedManifest:
+         すべての出力が最新のものです。
+         tomasen3.vcxproj -> C:\Users\tsu-me\Dropbox\01_シューティング\40_製造\10_原本\tomasen3\Debug\tomasen3.exe
+       FinalizeBuildStatus:
+         ファイル "Debug\tomasen3.unsuccessfulbuild" を削除しています。
+         "Debug\tomasen3.lastbuildstate" のタッチ タスクを実行しています。
+     1>プロジェクト "C:\Users\tsu-me\Dropbox\01_シューティング\40_製造\10_原本\tomasen3\tomasen3\tomasen3.vcxproj" (build ターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+
+経過時間 00:00:11.59

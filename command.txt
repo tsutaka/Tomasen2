@@ -4,9 +4,14 @@ git commit -a
 git remote add origin https://github.com//awesome.git
 git push origin master
 
-
+チェックアウト
 git checkout master
 
+原本を吸収
 git pull origin master
+
+コミット
 git commit -a
+
+原本へ吸収
 git push origin master

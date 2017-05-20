@@ -38,7 +38,6 @@ void Tomasen::runGame(HWND _hWnd){
 			Tomasen::updateGame();			//更新処理
 			Tomasen::deleteGame();			//削除処理
 			Tomasen::printGame();			//描画処理
-			//await(1000/60);
 
 			MUSIC->Check();
 
@@ -97,16 +96,16 @@ void Tomasen::initGame(){
 	musicDead4 = MUSIC->Open("music/dead4.wav");
 	musicHadou = MUSIC->Open("music/beamgun2.wav");
 	musicSakebi = MUSIC->Open("music/SKB49.wav");
-	musicKaiten = MUSIC->Open("music/回転砲台.wav");
-	musicAlarm = MUSIC->Open("music/アラーム.wav");
-	musicBakuhatsu = MUSIC->Open("music/爆発音.wav");
-	musicHaretsu = MUSIC->Open("music/破裂音.wav");
-	musicHidan = MUSIC->Open("music/敵の被弾音4F.wav");
-	musicKikanho = MUSIC->Open("music/機関砲単発.wav");
-	musicFami = MUSIC->Open("music/追尾発射音ファミ2.wav");
-	musicWarp = MUSIC->Open("music/敵ワープ.wav");
-	musicBiribiri = MUSIC->Open("music/ビリビリ音3.wav");
-	musicMissile = MUSIC->Open("music/ミサイル発射2.wav");
+	musicKaiten = MUSIC->Open("music/TurnCannon.wav");
+	musicAlarm = MUSIC->Open("music/Alarm.wav");
+	musicBakuhatsu = MUSIC->Open("music/bombSE.wav");
+	musicHaretsu = MUSIC->Open("music/CrushSE.wav");
+	musicHidan = MUSIC->Open("music/EnemyDamage.wav");
+	musicKikanho = MUSIC->Open("music/Machingun.wav");
+	musicFami = MUSIC->Open("music/FollowMissile.wav");
+	musicWarp = MUSIC->Open("music/EnemyWarp.wav");
+	musicBiribiri = MUSIC->Open("music/ChangeForm.wav");
+	musicMissile = MUSIC->Open("music/Missile.wav");
 	
 
 	/*音楽の再生*/

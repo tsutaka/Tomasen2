@@ -663,7 +663,7 @@ void Marker::draw(Tomasen& game){
 		2,
 		255);
 }
-Smoke2::Smoke2(){
+Smoke2::Smoke2() {
 	maxHp = 1;				//最大耐久度
 	imageX = 32;			//画像x座標
 	imageY = 8;			//画像y座標
@@ -677,4 +677,26 @@ Smoke2::Smoke2(){
 	timeOfLife = 50;		//生存フレーム
 	moveMode = 0;			//1:ターゲット移動
 }
+Chara::Chara() {
+	charOffset = 0;
+	imageX = 0;			//画像x座標
+	imageY = 1;			//画像y座標
+	imageW = 1;				//画像幅
+	imageH = 1;				//画像高
+	animeMax = 1;			//アニメーション枚数
+	animeWait = 12;			//アニメーション１枚のフレーム数
+	size = 1;				//サイズ
+	timeOfLife = 999;		//生存フレーム
+}
+void Chara::draw(Tomasen& game) {
+	/*エフェクト描画*/
+	game.IMAGE->drawAlphaBlendTile(getPos(),
+		getOutputW(),
+		getOutputH(),
+		getImageX() + charOffset, getImageY(),
+		getImageW(), getImageH(),
+		100);
+}
+
+
 } //namespace tm2

@@ -11,6 +11,11 @@
 #include <vector>
 
 namespace tm2{
+
+//ˆ—ŠÔŒv‘ª—p
+extern DWORD baseTime;
+extern DWORD checkTime[16];
+void CheckTime(int num);
 	
 // std:: ‚ğÈ—ª‚Å‚«‚é‚æ‚¤‚É
 using namespace std;

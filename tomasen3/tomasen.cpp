@@ -32,16 +32,22 @@ void Tomasen::runGame(HWND _hWnd){
 		
 		//フレームループ
 		while(gameRestart != 1){
-			//test
 			Tomasen::inputGame();			//入力処理
+			CheckTime(0);
 			Tomasen::communicationGame();	//伝達処理
+			CheckTime(1);
 			Tomasen::updateGame();			//更新処理
+			CheckTime(2);
 			Tomasen::deleteGame();			//削除処理
+			CheckTime(3);
 			Tomasen::printGame();			//描画処理
+			CheckTime(4);
 
 			MUSIC->Check();
+			CheckTime(5);
 
 			await(15);
+			CheckTime(6);
 		}
 	};
 
@@ -69,6 +75,18 @@ void Tomasen::initGame(){
 	labelList.clear();
 	friendList.clear();
 	enemyList.clear();
+
+	/*初期予約*/
+	eventList.reserve(10);
+	effectList.reserve(500);
+	friendBulletList.reserve(500);
+	enemyBulletList.reserve(500);
+	partsAList.reserve(100);
+	partsBList.reserve(100);
+	barList.reserve(10);
+	labelList.reserve(10);
+	friendList.reserve(10);
+	enemyList.reserve(500);
 
 	stringV.clear();
 	
@@ -403,6 +421,7 @@ void Tomasen::deleteGame(){
 				MUSIC->Play(musicBGM_2, 70000, 7000);
 				//stringV.push_back("Stage1開始");
 				eventFactory( EventSptr(new Stage1()) );
+				//eventFactory(EventSptr(new GameClear()));
 				break;
 			case 2:
 				//stringV.push_back("Stage2開始");
@@ -782,8 +801,12 @@ void Tomasen::printGame(){
 		sprintf_s(str, "A:%03d/%03d, B:%03d/B:%03d",	tmp->getPartsANum(), tmp->getPartsANum() + tmp->getPartsALost(), 
 														tmp->getPartsBNum(), tmp->getPartsBNum() + tmp->getPartsBLost());
 		IMAGE->printText(0, 6, str);
-		sprintf_s(str, "flag:%03d, mode:%03d",	bossFlag, mode );
+		sprintf_s(str, "flag:%03d, mode:%03d", bossFlag, mode);
 		IMAGE->printText(0, 7, str);
+		sprintf_s(str, "time1:%03d, 2:%03d, 3:%03d, 4:%03d", checkTime[0], checkTime[1], checkTime[2], checkTime[3]);
+		IMAGE->printText(0, 8, str);
+		sprintf_s(str, "time5:%03d, 6:%03d, 7:%03d, 8:%03d", checkTime[4], checkTime[5], checkTime[6], checkTime[7]);
+		IMAGE->printText(0, 9, str);
 	}
 	
 	/*メッセージ欄枠*/
@@ -816,6 +839,7 @@ void Tomasen::printGame(){
 	IMAGE->drawEnd();
 }
 
+/*::::::::レーダー表示処理::::::::*/
 void Tomasen::drawRader(){
 
 	/*

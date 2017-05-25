@@ -631,6 +631,20 @@ void GameClear::action(Tomasen& game){
 
 
 	/*リザルト*/
+
+	/*ハイスコア登録*/
+	if (phase == 1 && frameCnt == 10) {
+		/*ハイスコア判定*/
+
+
+		/*ゲームクリアの表示*/
+		effectFactory(EffectSptr(new Chara()));		//リストにオブジェクト追加
+		EffectVsptr::iterator it = effectList.end() - 1;			//直前のオブジェクトを参照
+		(*it)->setPos(Vec2(SCREEN_WIDTH - SCREEN_INDENT + 50, SCREEN_HEIGHT / 2 - 100));
+
+		phase++;
+
+	}
 	
 
 	/*エンディングの表示*/
@@ -638,7 +652,7 @@ void GameClear::action(Tomasen& game){
 	/*スタッフロール*/
 
 	/*スタッフロールへ*/
-	if(phase == 1 && frameCnt > 500){
+	if(phase == 2 && frameCnt > 500){
 		/*スタッフロール*/
 		next = 1001;
 	}

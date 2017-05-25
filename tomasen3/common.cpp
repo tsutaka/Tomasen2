@@ -7,6 +7,20 @@
 
 namespace tm2{
 
+//処理時間計測用
+DWORD baseTime = 0;
+DWORD checkTime[16] = { 0, 0, 0, 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 };
+
+/*処理時間計測関数*/
+//前回呼び出されてからの時間をcheckTime[num]に返す
+void CheckTime(int num) {
+	if (num < 0 || num >= 16) {
+		return;
+	}
+	checkTime[num] = timeGetTime() - baseTime;
+	baseTime = timeGetTime();
+}
+
 /*int以外の定数*/
 double PI = 3.1415926535;
 

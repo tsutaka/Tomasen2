@@ -179,5 +179,13 @@ public:
 	Smoke2();
 };
 
+class Chara : public Effect {
+private:
+	int charOffset;
+public:
+	Chara();
+	void draw(Tomasen &game);
+};
+
 } //namespace tm2
 #endif//INCLUDED_OBJ_EFFECT_HPP
